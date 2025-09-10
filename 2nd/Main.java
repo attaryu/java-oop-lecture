@@ -1,9 +1,10 @@
 import IT.PENS.A;
+
 public class Main {
     public static void main(String[] args) {
-       // A object1 = new A();
+        // A object1 = new A();
         // object1.info();
-        
+
         IT.A object2 = new IT.A();
         object2.info();
 

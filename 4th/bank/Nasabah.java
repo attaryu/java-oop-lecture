@@ -4,9 +4,9 @@ public class Nasabah {
     private String nama;
     private Tabungan tabungan;
 
-    public Nasabah(String nama, Tabungan tabungan){
-        this.nama=nama;
-        this.tabungan=tabungan;
+    public Nasabah(String nama, Tabungan tabungan) {
+        this.nama = nama;
+        this.tabungan = tabungan;
     }
 
     public String getNama() {
@@ -19,7 +19,7 @@ public class Nasabah {
 
     @Override
     public String toString() {
-        return "Nama: "+nama+"\nTabungan: "+tabungan;
+        return "Nama: " + nama + "\nTabungan: " + tabungan;
 
-    }    
+    }
 }

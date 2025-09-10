@@ -21,7 +21,7 @@ public class Lingkaran {
     public void setR(double r) {
         this.r = r;
     }
-    
+
     public double hitungLuas() {
         return Math.PI * r * r;
     }
@@ -30,4 +30,3 @@ public class Lingkaran {
         return Math.PI * 2 * r;
     }
 }
-

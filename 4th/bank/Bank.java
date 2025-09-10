@@ -4,18 +4,18 @@ public class Bank {
     Nasabah dataNasabah[];
     int jumlahNasabah;
 
-    public Bank(){
+    public Bank() {
         dataNasabah = new Nasabah[10];
         jumlahNasabah = 0;
     }
 
-    public Bank(int n){
+    public Bank(int n) {
         dataNasabah = new Nasabah[n];
-        jumlahNasabah = 0;        
+        jumlahNasabah = 0;
     }
 
-    public boolean tambahNasabah(Nasabah nsb){
-        if(jumlahNasabah<dataNasabah.length){
+    public boolean tambahNasabah(Nasabah nsb) {
+        if (jumlahNasabah < dataNasabah.length) {
             dataNasabah[jumlahNasabah] = nsb;
             jumlahNasabah++;
             return true;
@@ -23,8 +23,8 @@ public class Bank {
         return false;
     }
 
-    public boolean tambahNasabah(String nama, int saldo){
-        if(jumlahNasabah<dataNasabah.length){
+    public boolean tambahNasabah(String nama, int saldo) {
+        if (jumlahNasabah < dataNasabah.length) {
             dataNasabah[jumlahNasabah] = new Nasabah(nama, new Tabungan(saldo));
             jumlahNasabah++;
             return true;
@@ -32,7 +32,7 @@ public class Bank {
         return false;
     }
 
-    public Nasabah[] searchNasabah(String nama){
+    public Nasabah[] searchNasabah(String nama) {
         Nasabah[] res = new Nasabah[dataNasabah.length];
         int index = 0;
         for (int i = 0; i < dataNasabah.length; i++) {
@@ -48,13 +48,13 @@ public class Bank {
     @Override
     public String toString() {
         String str = "Data nasabah: \n";
-        for(int i = 0; i<jumlahNasabah;i++){
-            str = str + dataNasabah[i]+"\n";
+        for (int i = 0; i < jumlahNasabah; i++) {
+            str = str + dataNasabah[i] + "\n";
         }
         return str;
     }
 
-    public Nasabah getNasabah(int index){
+    public Nasabah getNasabah(int index) {
         return dataNasabah[index];
     }
 }

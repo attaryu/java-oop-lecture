@@ -13,13 +13,13 @@ public class MainITLingkaran {
         // System.out.println("Jari jari: " + lingkaran2.getR());
         // System.out.println("Luas: " + lingkaran2.hitungLuas());
         // System.out.println("Keliling: " + lingkaran2.hitungKeliling());
-        
+
         Lingkaran[] dataLink = new Lingkaran[5];
-        
+
         for (int i = 0; i < dataLink.length; i++) {
             dataLink[i] = new Lingkaran(Math.random() * 20);
         }
-        
+
         for (int i = 0; i < dataLink.length; i++) {
             System.out.println("Lingkaran ke-" + i);
             System.out.println("Jari jari: " + dataLink[i].getR());

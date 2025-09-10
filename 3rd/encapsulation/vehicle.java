@@ -4,15 +4,15 @@ public class vehicle {
     public double load;
     public double maxload;
 
-    public vehicle(double maxload){
+    public vehicle(double maxload) {
         this.maxload = maxload;
     }
-    
-    public double getLoad(){
+
+    public double getLoad() {
         return load;
     }
 
-    public double getMaxload(){
+    public double getMaxload() {
         return maxload;
     }
 }
